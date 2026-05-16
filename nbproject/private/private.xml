@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/BrayanLuis/Documents/Ingenieria%20de%20Sistemas/proySist_Gestion_Biblioteca/SistemaGestionBiblioteca/src/modelo/entidades/Libro.java</file>
+            <file>file:/C:/Users/BrayanLuis/Documents/Ingenieria%20de%20Sistemas/proySist_Gestion_Biblioteca/SistemaGestionBiblioteca/src/modelo/entidades/Prestamo.java</file>
+            <file>file:/C:/Users/BrayanLuis/Documents/Ingenieria%20de%20Sistemas/proySist_Gestion_Biblioteca/SistemaGestionBiblioteca/src/modelo/dao/UsuarioDao.java</file>
+            <file>file:/C:/Users/BrayanLuis/Documents/Ingenieria%20de%20Sistemas/proySist_Gestion_Biblioteca/SistemaGestionBiblioteca/src/modelo/dao/LibroDao.java</file>
+            <file>file:/C:/Users/BrayanLuis/Documents/Ingenieria%20de%20Sistemas/proySist_Gestion_Biblioteca/SistemaGestionBiblioteca/src/modelo/dao/PrestamoDao.java</file>
+            <file>file:/C:/Users/BrayanLuis/Documents/Ingenieria%20de%20Sistemas/proySist_Gestion_Biblioteca/SistemaGestionBiblioteca/src/modelo/conexion/SQLCnn.java</file>
+            <file>file:/C:/Users/BrayanLuis/Documents/Ingenieria%20de%20Sistemas/proySist_Gestion_Biblioteca/SistemaGestionBiblioteca/src/modelo/entidades/Usuario.java</file>
+            <file>file:/C:/Users/BrayanLuis/Documents/Ingenieria%20de%20Sistemas/proySist_Gestion_Biblioteca/SistemaGestionBiblioteca/src/modelo/entidades/Alumno.java</file>
+            <file>file:/C:/Users/BrayanLuis/Documents/Ingenieria%20de%20Sistemas/proySist_Gestion_Biblioteca/SistemaGestionBiblioteca/src/modelo/entidades/Docente.java</file>
+            <file>file:/C:/Users/BrayanLuis/Documents/Ingenieria%20de%20Sistemas/proySist_Gestion_Biblioteca/SistemaGestionBiblioteca/src/modelo/entidades/Administrador.java</file>
+            <file>file:/C:/Users/BrayanLuis/Documents/Ingenieria%20de%20Sistemas/proySist_Gestion_Biblioteca/SistemaGestionBiblioteca/src/modelo/clasesAbstractas/Persona.java</file>
+            <file>file:/C:/Users/BrayanLuis/Documents/Ingenieria%20de%20Sistemas/proySist_Gestion_Biblioteca/SistemaGestionBiblioteca/src/modelo/entidades/Rol.java</file>
+            <file>file:/C:/Users/BrayanLuis/Documents/Ingenieria%20de%20Sistemas/proySist_Gestion_Biblioteca/SistemaGestionBiblioteca/src/controlador/AlumnoController.java</file>
+            <file>file:/C:/Users/BrayanLuis/Documents/Ingenieria%20de%20Sistemas/proySist_Gestion_Biblioteca/SistemaGestionBiblioteca/src/modelo/dao/AlumnoDao.java</file>
+            <file>file:/C:/Users/BrayanLuis/Documents/Ingenieria%20de%20Sistemas/proySist_Gestion_Biblioteca/SistemaGestionBiblioteca/src/modelo/procesos/ProcesosFormAlumno.java</file>
+            <file>file:/C:/Users/BrayanLuis/Documents/Ingenieria%20de%20Sistemas/proySist_Gestion_Biblioteca/SistemaGestionBiblioteca/src/vista/Principal.java</file>
+            <file>file:/C:/Users/BrayanLuis/Documents/Ingenieria%20de%20Sistemas/proySist_Gestion_Biblioteca/SistemaGestionBiblioteca/src/vista/FormDialogAlumno.java</file>
+        </group>
+    </open-files>
+</project-private>
