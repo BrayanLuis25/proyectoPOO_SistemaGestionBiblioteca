@@ -154,8 +154,6 @@ public class Principal extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(900, 600));
 
         sidebar.setBackground(new java.awt.Color(30, 30, 47));
-        sidebar.setMaximumSize(null);
-        sidebar.setMinimumSize(null);
         sidebar.setPreferredSize(new java.awt.Dimension(280, 700));
         sidebar.setLayout(new javax.swing.BoxLayout(sidebar, javax.swing.BoxLayout.Y_AXIS));
 
