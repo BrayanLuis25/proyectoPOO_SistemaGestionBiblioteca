@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.5.final using JasperReports Library version 6.21.5-74d586df47b25dbd05bd0957999819196e59934a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rptPrestamos" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="848ddb89-3611-409e-aa93-85fa9b38f7cf">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Adapter Oficial"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT pr.idPrestamo,
+       p.nombres,
+       l.titulo,
+       pr.fechaPrestamo,
+       pr.fechaDevolucion,
+       pr.estado,
+       pr.cantidadLibros
+FROM prestamo pr
+INNER JOIN persona p ON pr.idPersona = p.idPersona
+INNER JOIN libro l ON pr.idLibro = l.idLibro]]>
+	</queryString>
+	<field name="idPrestamo" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idPrestamo"/>
+		<property name="com.jaspersoft.studio.field.label" value="idPrestamo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prestamo"/>
+	</field>
+	<field name="nombres" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nombres"/>
+		<property name="com.jaspersoft.studio.field.label" value="nombres"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="persona"/>
+	</field>
+	<field name="titulo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="titulo"/>
+		<property name="com.jaspersoft.studio.field.label" value="titulo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="libro"/>
+	</field>
+	<field name="fechaPrestamo" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="fechaPrestamo"/>
+		<property name="com.jaspersoft.studio.field.label" value="fechaPrestamo"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prestamo"/>
+	</field>
+	<field name="fechaDevolucion" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="fechaDevolucion"/>
+		<property name="com.jaspersoft.studio.field.label" value="fechaDevolucion"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prestamo"/>
+	</field>
+	<field name="estado" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="estado"/>
+		<property name="com.jaspersoft.studio.field.label" value="estado"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prestamo"/>
+	</field>
+	<field name="cantidadLibros" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="cantidadLibros"/>
+		<property name="com.jaspersoft.studio.field.label" value="cantidadLibros"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="prestamo"/>
+	</field>
+	<sortField name="idPrestamo" order="Descending"/>
+	<sortField name="nombres" order="Descending"/>
+	<sortField name="titulo" order="Descending"/>
+	<sortField name="fechaPrestamo" order="Descending"/>
+	<sortField name="fechaDevolucion" order="Descending"/>
+	<sortField name="estado" order="Descending"/>
+	<sortField name="cantidadLibros" order="Descending"/>
+<!--	<group name="idPrestamo" isStartNewColumn="true">
+		<groupExpression><![CDATA[$F{idPrestamo}]]></groupExpression>
+	</group>
+	<group name="nombres">
+		<groupExpression><![CDATA[$F{nombres}]]></groupExpression>
+	</group>
+	<group name="titulo">
+		<groupExpression><![CDATA[$F{titulo}]]></groupExpression>
+	</group>
+	<group name="fechaPrestamo">
+		<groupExpression><![CDATA[$F{fechaPrestamo}]]></groupExpression>
+	</group>
+	<group name="fechaDevolucion">
+		<groupExpression><![CDATA[$F{fechaDevolucion}]]></groupExpression>
+	</group>
+	<group name="estado">
+		<groupExpression><![CDATA[$F{estado}]]></groupExpression>
+	</group>
+	<group name="cantidadLibros">
+		<groupExpression><![CDATA[$F{cantidadLibros}]]></groupExpression>
+	</group>-->
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="90" y="40" width="230" height="32" uuid="f14c7a07-e8f8-4d26-9855-b879c8d97e01"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Reporte de Biblioteca BiblioLecturas]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="99" splitType="Stretch">
+			<staticText>
+				<reportElement x="-20" y="10" width="70" height="19" uuid="01b1b689-f4ae-42fe-abfa-1216277d3e40">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2c2581c5-ad86-42d2-a9f9-59451bfb9dfc"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[idPrestamo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="11" width="70" height="19" uuid="823eced8-6be2-4d9a-b5ec-3ed388370020">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="99274f99-7098-4729-a373-1a61913e8f72"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[titulo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="11" width="80" height="18" uuid="27a4373f-ada0-454d-8a18-8d6eaa8669be">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ede1db04-7236-483b-bc25-5e8f36ea5b80"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[fechaPrestamo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="10" width="70" height="19" uuid="5c94b608-c6b3-4b43-900c-abfd202d1c9c"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nombres]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="11" width="100" height="18" uuid="c2b2f877-a78c-4dc0-981a-251ba5bfab95">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ae9b984e-be32-48a1-9ead-96946a438879"/>
+				</reportElement>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[fechaDevolucion]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="11" width="59" height="18" uuid="79403aac-18dc-4b14-962c-f015327cb138">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="07765e71-e316-4c7c-8ff4-0c0d3cdf4169"/>
+				</reportElement>
+				<text><![CDATA[estado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="480" y="12" width="70" height="15" uuid="b13c2de8-7ca3-4429-b289-bc47b0f3830b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="16a3dbd7-c43a-4894-ad5b-ad512b21de2e"/>
+				</reportElement>
+				<text><![CDATA[cantidadLibros]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="-11" y="0" width="70" height="19" uuid="474be877-413e-4c31-8fd6-0f613b0d4f38">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2c2581c5-ad86-42d2-a9f9-59451bfb9dfc"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{idPrestamo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="70" y="0" width="70" height="18" uuid="d712fff1-39a0-4bf9-9e00-3111ea43357e"/>
+				<textFieldExpression><![CDATA[$F{nombres}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="0" width="70" height="18" uuid="4c750335-4a3e-491b-b462-c3394ced349e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="99274f99-7098-4729-a373-1a61913e8f72"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{titulo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="100" height="18" uuid="6e6155b0-ae16-4f47-966e-9d3d006ba8cb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ae9b984e-be32-48a1-9ead-96946a438879"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{fechaDevolucion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="68" height="18" uuid="02e5f038-6e05-4907-930a-5fbcc4d14e17">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="07765e71-e316-4c7c-8ff4-0c0d3cdf4169"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{estado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="480" y="0" width="79" height="18" uuid="31719f00-6ba3-43f6-a8f7-2697beb85e1a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="16a3dbd7-c43a-4894-ad5b-ad512b21de2e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{cantidadLibros}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="0" width="70" height="18" uuid="d5997941-063d-4101-8a13-0785a4fee166">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ede1db04-7236-483b-bc25-5e8f36ea5b80"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{fechaPrestamo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
