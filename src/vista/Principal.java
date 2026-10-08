@@ -684,8 +684,10 @@ Legibilidad: Cualquiera que lea tu código sabrá al instante que esa ventana bl
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Usuario user = null;
-                new Principal(user).setVisible(true);
+                //1.Aqui no puedes usar credencial,
+                //2.porque estarías intentando iniciar Principal sin usuario autenticado.
+               //Usuario user = null;
+               // new Principal(user).setVisible(true);
             }
         });
     }
